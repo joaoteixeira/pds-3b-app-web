@@ -1,0 +1,41 @@
+﻿<!-- Sidebar -->
+<div id="sidebar" class="bg-white dark:bg-gray-800 w-64 p-4 flex flex-col shadow-lg transition-all duration-300">
+    <button id="toggleSidebar"
+            class="mb-6 flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="font-medium sidebar-text">Menu</span>
+    </button>
+
+    <nav class="flex flex-col gap-4 flex-1">
+        <a href="/"
+           class="flex items-center gap-3 p-2 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900 text-gray-700 dark:text-gray-200">
+            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3 12l2-2m0 0l7-7 7 7m-9 2v8m4 0v-8m5-2l2 2m-2-2v10a1 1 0 01-1 1H6a1 1 0 01-1-1V10z" />
+            </svg>
+            <span class="sidebar-text">Dashboard</span>
+        </a>
+        <a href="/produtos"
+           class="flex items-center gap-3 p-2 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900 text-gray-700 dark:text-gray-200">
+            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-6a2 2 0 012-2h6" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 17h6a2 2 0 002-2V9m-8 8l-4 4m0 0H5a2 2 0 01-2-2V5a2 2 0 012-2h6" />
+            </svg>
+            <span class="sidebar-text">Produtos</span>
+        </a>
+    </nav>
+
+    <!-- Sair no final -->
+    <a href="#"
+       class="flex items-center gap-3 p-2 rounded-lg mt-6 hover:bg-red-100 dark:hover:bg-red-900 text-red-600 dark:text-red-400">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v1" />
+        </svg>
+        <span class="sidebar-text">Sair</span>
+    </a>
+</div>

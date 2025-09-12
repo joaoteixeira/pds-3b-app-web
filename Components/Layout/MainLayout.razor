@@ -1,0 +1,47 @@
+﻿@inherits LayoutComponentBase
+
+<NavMenu />
+
+<!-- Main content -->
+<div class="flex flex-col flex-1">
+    <!-- Navbar -->
+    <header class="bg-white dark:bg-gray-800 shadow-md h-16 flex items-center justify-between px-6 transition-colors duration-500">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <img src="/imagens/gas.png" alt="Logo" class="h-10 w-10">
+            <span class="font-semibold text-lg text-gray-700 dark:text-gray-200">MinhaApp</span>
+        </div>
+
+        <!-- User menu + tema -->
+        <div class="flex items-center gap-4 relative">
+            <button id="toggleTheme" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 transition">
+                🌙
+            </button>
+            <div class="relative">
+                <button id="userMenuBtn" class="flex items-center gap-2">
+                    <span class="text-gray-600 dark:text-gray-300">Olá, João</span>
+                    <img src="https://i.pravatar.cc/40" alt="Usuário" class="rounded-full h-10 w-10 border">
+                </button>
+                <!-- Dropdown -->
+                <div id="userDropdown"
+                        class="hidden absolute right-0 mt-2 w-40 bg-white dark:bg-gray-700 shadow-lg rounded-lg overflow-hidden">
+                    <a href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">Configurações</a>
+                    <a href="#"
+                        class="block px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-600">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="p-6 flex-1">
+        @Body
+    </main>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
