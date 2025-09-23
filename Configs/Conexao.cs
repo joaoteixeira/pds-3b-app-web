@@ -1,4 +1,7 @@
-﻿namespace AppWeb.Configs
+﻿using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
+
+namespace AppWeb.Configs
 {
     public class Conexao
     {
