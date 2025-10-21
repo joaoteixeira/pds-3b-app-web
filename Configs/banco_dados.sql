@@ -45,7 +45,7 @@ VALUES
   ),
   (
     1,
-    'Mouse Óptico',
+    'Mouse Ã“ptico',
     'Mouse com fio, 1200 DPI',
     50,
     45.90
@@ -59,7 +59,7 @@ VALUES
   ),
   (
     2,
-    'Carregador Rápido',
+    'Carregador RÃ¡pido',
     'Carregador USB-C 25W',
     100,
     89.90
@@ -67,13 +67,13 @@ VALUES
   (
     3,
     'Cadeira Gamer',
-    'Cadeira ergonômica ajustável',
+    'Cadeira ergonÃ´mica ajustÃ¡vel',
     15,
     1250.00
   ),
   (
     3,
-    'Mesa de Escritório',
+    'Mesa de EscritÃ³rio',
     'Mesa em L com suporte para monitor',
     8,
     980.00
@@ -87,7 +87,7 @@ VALUES
   ),
   (
     4,
-    'Teclado Mecânico',
+    'Teclado MecÃ¢nico',
     'Teclado RGB switch blue',
     30,
     350.00
