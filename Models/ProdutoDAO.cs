@@ -101,5 +101,22 @@ namespace AppWeb.Models
                 throw;
             }
         }
+
+        public void Excluir(int id)
+        {
+            try
+            {
+                var comando = _conexao.CreateCommand(
+                "DELETE FROM produto WHERE id_pro = @id;");
+
+                comando.Parameters.AddWithValue("@id", id);
+
+                comando.ExecuteNonQuery();
+            }
+            catch
+            {
+                throw;
+            }
+        }
     }
 }
